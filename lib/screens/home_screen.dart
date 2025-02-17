@@ -19,8 +19,8 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.symmetric(
-            horizontal: screenWidth * 0.04, // 4% padding on sides
-            vertical: screenHeight * 0.02, // 2% padding on top/bottom
+            horizontal: screenWidth * 0.04,
+            vertical: screenHeight * 0.02,
           ),
           child: Padding(
             padding: const EdgeInsets.only(top: 58.0),
@@ -29,16 +29,15 @@ class HomeScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
 
-                // OR Divider Row (Fully Responsive)
-                Row(
+                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Expanded(
                       child: Divider(
                         color: Colors.grey,
                         thickness: 1,
-                        indent: screenWidth * 0.075, // 8% of screen width
-                        endIndent: screenWidth * 0.02, // 2% of screen width
+                        indent: screenWidth * 0.075,
+                        endIndent: screenWidth * 0.02,
                       ),
                     ),
                     Padding(
@@ -49,8 +48,8 @@ class HomeScreen extends StatelessWidget {
                       child: Divider(
                         color: Colors.grey,
                         thickness: 1,
-                        indent: screenWidth * 0.02, // 2% of screen width
-                        endIndent: screenWidth * 0.075, // 8% of screen width
+                        indent: screenWidth * 0.02,
+                        endIndent: screenWidth * 0.075,
                       ),
                     ),
                   ],
@@ -96,8 +95,7 @@ class HomeScreen extends StatelessWidget {
 
                 SizedBox(height: screenHeight * 0.05),
 
-                // Login Text
-                RichText(
+                 RichText(
                   textAlign: TextAlign.center,
                   text: TextSpan(
                     children: [

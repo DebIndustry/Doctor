@@ -27,8 +27,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // ✅ Title
-              Text(
+               Text(
                 'Forgot Password',
                 style: TextStyle(
                   color: Colors.black,
@@ -38,8 +37,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
               ),
               SizedBox(height: screenHeight * 0.03),
 
-              // ✅ Password Input
-              CustomInputField(
+               CustomInputField(
                 label: 'Password',
                 hintText: 'Enter new password',
                 controller: passwordController,
@@ -48,8 +46,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
               ),
               SizedBox(height: screenHeight * 0.02),
 
-              // ✅ Confirm Password Input
-              CustomInputField(
+               CustomInputField(
                 label: 'Confirm Password',
                 hintText: 'Re-enter new password',
                 controller: confirmPasswordController,
@@ -58,8 +55,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
               ),
               SizedBox(height: screenHeight * 0.04),
 
-              // ✅ Sign Up Button
-              SizedBox(
+               SizedBox(
                 width: screenWidth * 0.78,
                 child: CustomButton(
                   label: 'Reset Password',

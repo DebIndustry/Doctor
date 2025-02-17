@@ -53,7 +53,7 @@ class OtpScreen extends StatelessWidget {
                     Pinput(
                       length: 6,
                       defaultPinTheme: PinTheme(
-                        width: screenWidth * 0.12, // Responsive OTP box size
+                        width: screenWidth * 0.12,
                         height: screenHeight * 0.07,
                         textStyle: TextStyle(fontSize: screenWidth * 0.05),
                         decoration: BoxDecoration(
@@ -65,8 +65,7 @@ class OtpScreen extends StatelessWidget {
 
                     SizedBox(height: screenHeight * 0.015),
 
-                    // ✅ Timer
-                    Text(
+                     Text(
                       "59 : 00",
                       style: TextStyle(fontSize: screenWidth * 0.045, color: Colors.red),
                     ),
@@ -85,8 +84,7 @@ class OtpScreen extends StatelessWidget {
 
                     SizedBox(height: screenHeight * 0.03),
 
-                    // ✅ Change Number & Resend OTP
-                    Row(
+                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         TextButton(
@@ -108,8 +106,7 @@ class OtpScreen extends StatelessWidget {
 
                     SizedBox(height: screenHeight * 0.15),
 
-                    // ✅ Privacy Policy & Terms
-                    Text.rich(
+                     Text.rich(
                       TextSpan(
                         text: "Read our ",
                         style: TextStyle(fontSize: screenWidth * 0.035, color: Colors.black),
